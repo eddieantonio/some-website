@@ -4,6 +4,60 @@
   <meta charset="UTF-8">
   <title>hello this be goodr website</title>
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <style>
+
+    @keyframes shrek {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100vw 100vh;
+      }
+    }
+
+    :root {
+      background-size: 25vmax;
+      background-color: limegreen;
+      background-image: url(./Statue_of_Shrek_in_the_Alps_of_France.jpg);
+      font-family: "Comic Sans MS";
+
+      animation: shrek 5s infinite linear;
+    }
+
+    body {
+      color: pink;
+    }
+
+   html, body {
+     padding: 0;
+     margin: 0;
+   }
+
+    header, main {
+      margin: 1rem;
+    }
+
+    @keyframes cat {
+      0% {
+        transform: perspective(17px) translate3d(0);
+      }
+
+      100% {
+        transform: perspective(17px) translate3d(0, 0, 2rem);
+      }
+    }
+
+   .hero-image {
+     display: block;
+
+     max-width: 90vw;
+
+     margin: auto;
+
+     animation: cat 1s linear infinite;
+   }
+
+  </style>
 </head>
 <body>
   <header>
@@ -11,8 +65,8 @@
   </header>
 
   <main>
-    <p> hi! hi! hi! </p>
-    <img src="./cat-mask.png" alt="A cat with a disposable, COVID-preventing mask">
+    <p> HI! HI! HI! </p>
+    <img class="hero-image" src="./cat-mask.png" alt="A cat with a disposable, COVID-preventing mask">
   </main>
 
   <footer>
